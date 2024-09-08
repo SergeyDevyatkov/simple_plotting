@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from plotting_script.excel_reader import PlotData, read_excel
+from plotting_script.excel_reader import read_excel
 from plotting_script.plotter import create_plot, save_plot
 
 SPREADHEETS_PATH = Path().absolute() / "spreadsheets"
