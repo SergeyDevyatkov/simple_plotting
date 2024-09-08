@@ -18,9 +18,9 @@ cd path/to/plotting-script/folder
 ```
 poetry install
 ```
-3. Copy excel files to spreadsheets folder
+3. Create `spreadsheets` folder in the project directory and put spreadsheet files there
 4. Adjust `plotting_script/config.py` file
-5. In PowerShell run 
+5. In PowerShell execute
 ```
 poetry run main
 ```
