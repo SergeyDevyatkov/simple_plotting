@@ -7,7 +7,7 @@ SPREADHEETS_PATH = Path().absolute() / "spreadsheets"
 PATH_TO_SAVE_PLOTS = Path().absolute() / "plots"
 
 
-def make_savepath():
+def make_plots_savefolder():
     if not PATH_TO_SAVE_PLOTS.exists():
         PATH_TO_SAVE_PLOTS.mkdir()
 
@@ -17,7 +17,7 @@ def log_plotting_status(plot_name):
 
 
 def main():
-    make_savepath()
+    make_plots_savefolder()
     data = read_excel(SPREADHEETS_PATH)
 
     for data_to_plot in data:
