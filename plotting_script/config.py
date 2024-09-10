@@ -6,6 +6,7 @@ SPREADSHEET_CONFIG = [
             "top_server_te-201b_pv",
             "top_server_pt-206_pv",
         ],
+        "conclusion": "It was good",
     },
     {
         "spreadheet": "Trends work out_2.xlsm",
@@ -13,5 +14,6 @@ SPREADSHEET_CONFIG = [
         "right_axis": [
             "top_server_te-201b_pv",
         ],
+        "conclusion": "It was bad",
     },
 ]

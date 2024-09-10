@@ -10,15 +10,20 @@ from plotting_script.config import SPREADSHEET_CONFIG
 class PlotData:
     plot_name: str
     dataframe: pd.DataFrame
+    conclusion: str | None
     right_axis_tags: list[str] = field(default_factory=list)
 
     @classmethod
     def from_config(cls, config: dict, dataframe: pd.DataFrame):
         plot_name: str = config["spreadheet"].split(".")[0]
         right_axis_tags = config.get("right_axis", [])
+        conclusion = config.get("conclusion", None)
 
         return cls(
-            plot_name=plot_name, dataframe=dataframe, right_axis_tags=right_axis_tags
+            plot_name=plot_name,
+            dataframe=dataframe,
+            right_axis_tags=right_axis_tags,
+            conclusion=conclusion,
         )
 
     @property
